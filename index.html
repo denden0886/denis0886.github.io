@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khrenov Denis | Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- Font: clean & simple -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo">
+        <span class="logo-main">Khrenov Denis</span>
+        <span class="logo-sub">Web Developer</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+
+        <!-- Left: text -->
+        <div class="hero-text">
+          <p class="hero-eyebrow">Web Developer · Frontend & Backend</p>
+
+          <h1 class="hero-title">
+            Bring the Web to perfection.
+          </h1>
+
+          <p class="hero-subtitle">
+            Web developer since 2017 with a lifelong focus on building for the web and a deep understanding of modern web architecture and structure. Skilled in frontend development using React, Next.js, Redux, and TypeScript, paired with backend experience in Node.js and MySQL. Experienced working in SaaS environments and delivering clean, scalable, and user‑focused solutions using core technologies such as HTML and CSS. Passionate about creating reliable products and continuously improving my technical craft.
+          </p>
+
+          <p class="hero-body">
+            Skilled in React, Next.js, Redux, TypeScript, Node.js, and MySQL. Experienced in SaaS environments, delivering clean, scalable, and user-focused solutions.
+          </p>
+
+          <div class="hero-actions">
+            <!-- Outline style for both -->
+            <a href="#experience" class="btn btn-outline">View Experience</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+
+            <!-- CV download selector + icon-only button -->
+            <div class="download-group">
+              <select
+                id="cvFormat"
+                class="download-select"
+                aria-label="Resume format"
+              >
+              <option value="pdf">CV_Eng.pdf</option>
+              <option value="pdf">CV_Heb.pdf</option>
+              </select>
+              <button
+                type="button"
+                id="downloadCvBtn"
+                class="btn btn-ghost download-btn"
+                aria-label="Download CV"
+              >
+                <svg
+                  class="download-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 3a1 1 0 0 1 1 1v9.086l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1.002 1.002 0 0 1-1.414 0l-4-4A1 1 0 0 1 8.707 10.793L11 13.086V4a1 1 0 0 1 1-1z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M5 17a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span class="download-tooltip">Download CV</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-meta">
+            <span>Based in Israel (Haifa)</span>
+            <span>Open to .js roles, Frontend & Backend</span>
+            <!-- <span>
+              Portfolio: <a href="https://maxl4me.github.io/max_rybkin_portfolio/" target="_blank" rel="noopener noreferrer">
+                max_rybkin_portfolio
+              </a>
+            </span> -->
+          </div>
+        </div>
+
+        <!-- Right: photo -->
+        <div class="hero-aside">
+          <div class="hero-photo-wrapper">
+            <img
+              src="images/denis_site_image.jpg"
+              alt="Portrait of Denis Khrenov"
+              class="hero-photo"
+            />
+          </div>
+
+          <div class="hero-note">
+            <p class="hero-note-title">Current role</p>
+            <p class="hero-note-body">
+              Self‑employed Full‑Stack Web Developer — Independently building and maintaining end‑to‑end web solutions, handling both frontend and backend development with a focus on performance, usability, and scalability.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Summary</h2>
+          <p class="section-subtitle">
+            A short overview of my background and approach to Web Development.
+          </p>
+        </header>
+
+        <div class="grid about-grid">
+
+          <article class="card">
+            <h3 class="card-title">Profile</h3>
+            <p class="card-body">
+              Full‑stack web developer since 2017 with a strong understanding of modern web architecture. I build scalable, user‑focused applications using React, Next.js, Redux, TypeScript, Node.js, and MySQL. Experienced in SaaS environments and skilled in delivering clean, reliable solutions with core web technologies. Committed to quality, performance, and continuous improvement.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">How I Work</h3>
+            <p class="card-body">
+              I rely on my experience to guide development decisions, starting with thoughtful planning before writing any code. I focus on creating clean, reusable functions and scalable structures to ensure long‑term maintainability and efficient development. If you want it longer, more technical, or more personal in tone, I can refine it further.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Languages & Licenses</h3>
+            <ul class="list">
+              <li>Hebrew — Fluent</li>
+              <li>English — Fluent</li>
+              <li>Russian — Fluent</li>
+              <li>Driver’s license: Private car (B)</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">
+            Technologies and areas I work with most often.
+          </p>
+        </header>
+
+        <div class="grid skills-grid">
+
+          <article class="card">
+            <h3 class="card-title">Frontend</h3>
+            <ul class="pill-list">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Redux</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>REST APIs</li>
+              <li>Responsive Design</li>
+              <li>Git</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Backend</h3>
+            <ul class="pill-list">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MySQL</li>
+              <li>REST API development</li>
+              <li>Authentication</li>
+              <li>Database Design</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Cloud & Infrastructure</h3>
+            <ul class="pill-list">
+              <li>Vercel</li>
+              <li>AWS</li>
+              <li>Cloudflare</li>
+              <li>GitHub</li>
+              <li>CI/CD Pipeline</li>
+              <li>Networking Basics</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">
+            Roles where I applied.
+          </p>
+        </header>
+
+        <div class="grid experience-grid">
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="card-meta-main">Self employee</span>
+              <span class="card-meta-sub">2019 – Present</span>
+            </div>
+            <p class="card-body">
+              • React Web Development<br />
+              • Building web applications from scratch for customers.<br />
+              • Using React + Node + MySQL stack.<br />
+              • Deploying applications on Vercel and AWS.<br />
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="card-meta-main">Full‑Stack Developer</span>
+              <span class="card-meta-sub">2022 – 2023 · Bynet Software</span>
+            </div>
+            <p class="card-body">
+              • Senior React Web Developer.<br />
+              • Working with clients directly.<br />
+              • Collaborating within a small team on classified, high‑impact projects.<br />
+              • Developing frontend applications using Next.js and TypeScript.<br />
+              • Backend experience with .NET, C#, microservices architecture, and stored procedures.<br />
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="card-meta-main">Junior Frontend — Codex/Careebiz</span>
+              <span class="card-meta-sub">2017 – 2019</span>
+            </div>
+            <p class="card-body">
+              • Experienced in React.js development.<br />
+              • Skilled in project management and cross‑team coordination.<br />
+              • Served as a team leader for the past year, overseeing developers and conducting code reviews.<br />
+              • Successfully developed three SaaS applications simultaneously.<br />
+              • Proficient in Pure React with state management using Redux and MobX.<br />
+            </p>
+          </article>
+        </div>
+
+        <div class="grid-two education-grid">
+          <div>
+            <h3 class="subsection-title">Education</h3>
+            <p class="subsection-body">
+              • 2013 – 2016: B.Sc. in Computer Science, Open University.<br />
+              • 1997 – 2004: Ort Ma’alot High School.
+            </p>
+          </div>
+          <div>
+            <h3 class="subsection-title">Military Service</h3>
+            <p class="subsection-body">
+              2004 – 2007: MLRS Artillery, IDF.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            Feel free to reach out about Frontend roles, projects, or collaboration.
+          </p>
+        </header>
+
+        <div class="card contact-card">
+          <div class="contact-grid">
+            <div>
+              <h3 class="contact-label">Email</h3>
+              <a class="contact-link" href="mailto:denis0886@gmail.com">denis0886@gmail.com</a>
+            </div>
+
+            <div>
+              <h3 class="contact-label">Phone</h3>
+              <p class="contact-text">(+972) 054-659-4909</p>
+            </div>
+
+            <div>
+              <h3 class="contact-label">LinkedIn</h3>
+              <div class="contact-social">
+                <a href="https://www.linkedin.com/in/denis-khrenov-23815869/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn profile"
+                   class="linkedin-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                       viewBox="0 0 24 24"
+                       width="20"
+                       height="20"
+                       aria-hidden="true">
+                    <circle cx="12" cy="12" r="11" fill="none" stroke="#38bdf8" stroke-width="1.4" />
+                    <path fill="#38bdf8"
+                          d="M9 17H6V10h3v7zM7.5 9C6.7 9 6 8.3 6 7.5S6.7 6 7.5 6 9 6.7 9 7.5 8.3 9 7.5 9zM18 17h-3v-3.6c0-.9-.3-1.5-1.2-1.5-.6 0-.9.4-1.1.7-.1.2-.1.6-.1.9V17h-3s.1-6.4 0-7h3v1c.4-.6 1-1.4 2.5-1.4 1.8 0 3 1.2 3 3.8V17z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top" class="back-to-top">
+    ↑
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Denis Khrenov. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Update year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Back-to-top button logic
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 260) {
+        backToTopBtn.classList.add("back-to-top--visible");
+      } else {
+        backToTopBtn.classList.remove("back-to-top--visible");
+      }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // CV download logic (DOCX / PDF)
+    const cvFormatSelect = document.getElementById("cvFormat");
+    const downloadCvBtn = document.getElementById("downloadCvBtn");
+
+    downloadCvBtn.addEventListener("click", () => {
+      const format = cvFormatSelect.value;
+      let filePath = "";
+
+      if (format === "pdf") {
+        filePath = "files/CV_Eng.pdf";
+      } else {
+        filePath = "files/CV_Heb.pdf";
+      }
+
+      window.open(filePath, "_blank");
+    });
+  </script>
+
+</body>
+</html>
